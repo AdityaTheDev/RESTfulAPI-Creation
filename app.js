@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended:true}))
 
 app.use(express.static("public"))
 
-mongoose.connect("mongodb://0.0.0.0:27017/wikiDB",{useNewUrlParser:true})
+mongoose.connect("mongodb+srv://aditya:aditya@cluster0.ibleg6b.mongodb.net/apiDB",{useNewUrlParser:true})
 
 const articleSchema={
      title:String,
