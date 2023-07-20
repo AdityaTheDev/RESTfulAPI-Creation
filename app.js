@@ -21,6 +21,14 @@ const articleSchema={
 const Article=mongoose.model("Article",articleSchema);
 
 
+app.get('/',function(req,res){
+    res.write("1) In the current URL in the browser add /articles. Title & content will appear \n")
+    res.write("2) add /articles/title \n")
+    res.write("3) Experiment with  GET , POST, PUT, PATCH, DELETE. Use DELETE with caution \n")
+
+    res.send()
+})
+
 //request for all articles
 
 app.route("/articles").
